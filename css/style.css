@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+
 }
 
 .navbar-inverse{
@@ -39,27 +40,50 @@ body{
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover{
-  background-color: white;
+  background-color: transparent   ;
   color: black;
 }
 
-/* SLIDER FULL COVER WIDTH*/
-
-.carousel,
-.item,
-.active {
-    height: 100%;
-}
-.carousel-inner {
-    height: 100%;
-}
-/* Background images are set within the HTML using inline CSS, not here */
-.fill {
+/* CAROUSEL
+-------------------------------------------------- */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    height: 620px;
+    min-width: 100%;
     width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    max-width: 100%;
+    line-height: 1;
+}
+
+/* ABOUT THE CHEF SECTION*/
+
+
+@media screen and (max-width: 568px){
+     .navbar-inverse .navbar-brand{
+      margin-right:2px;
+       }
+}
+
+.navbar-toggle {
+  background-color: black;
+}
+section#chef {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+section#chef .chef {
+padding-left: 100px;
+}
+
+section#chef .info h1{
+   margin-left: 60px;
+   margin-top: 150px;
+   font-family: 'Old Standard TT', serif;
+
+}
+
+section#chef .info {
+  opacity: 0;
 }
